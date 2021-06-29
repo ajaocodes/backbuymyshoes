@@ -81,5 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: buymyshoes_production
   url: <%= ENV['DATABASE_URL'] %>
