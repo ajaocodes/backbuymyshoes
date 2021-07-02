@@ -15,7 +15,7 @@ The repository was created to serve as my backend API for my selling shoes app.
 * https://github.com/ajaocodes/backbuymyshoes.git 
 
 ## FUTURE IMPROVEMENTS
-- Add more styling to the app
-- Allow users to sign up and only be able to edit or delete the post that each user create.
-- Create some authentication to protect each post. 
+- Create a user model.
+- Allow users to sign up and only be able to edit or delete the post that each user create. 
+- Create some authentication to protect each post.
 - Create a mobile app.
