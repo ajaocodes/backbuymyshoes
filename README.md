@@ -1,24 +1,21 @@
-# README
+# BUY MY SHOES BACKEND REPO
+The repository was created to serve as my backend API for my selling shoes app.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## TECHNOLOGIES USED
+* RUBY
+* RUBY ON RAILS
+* POSTMAN
+* POSTGRES 
 
-Things you may want to cover:
+## APPROACH TAKEN
+- This application was coded using Ruby on Rails to create a JSON API with one model (shoe) with full CRUD available. 
+- Postgres is used for my database and Postman was used to test the routes. 
 
-* Ruby version
+## LINK TO API 
+* https://github.com/ajaocodes/backbuymyshoes.git 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## FUTURE IMPROVEMENTS
+- Add more styling to the app
+- Allow users to sign up and only be able to edit or delete the post that each user create.
+- Create some authentication to protect each post. 
+- Create a mobile app.
