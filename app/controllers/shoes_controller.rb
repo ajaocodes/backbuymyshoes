@@ -1,5 +1,6 @@
 class ShoesController < ApplicationController
   before_action :set_shoe, only: [:show, :update, :destroy]
+  before_action :authorized, only: [:create, :update, :destroy]
 
   # GET /shoes
   def index
@@ -16,6 +17,7 @@ class ShoesController < ApplicationController
   # POST /shoes
   def create
     @shoe = Shoe.new(shoe_params)
+    @shoe.user = @user
 
     if @shoe.save
       render json: @shoe, status: :created, location: @shoe
@@ -46,6 +48,6 @@ class ShoesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def shoe_params
-      params.require(:shoe).permit(:title, :description, :image, :price)
+      params.require(:shoe).permit(:title, :description, :image, :price, :user_id)
     end
 end
